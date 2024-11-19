@@ -2,20 +2,12 @@ import java.util.Scanner;
 
 public class Welcome {
     public static void main(String[] args) {
-        //Se crea el scanner
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
+        System.out.print("Dime cómo quieres que te llame: ");
+        String name = input.next();
 
-        //Pedimos la información al usuario
-        System.out.println("¿Cuál es tu nombre?");
+        System.out.println("Hola! Bienvenide " + name + " al mundo de Java!");
 
-        //Se recoge el dato del usuario y se lo almacena en una variable
-        String name = scanner.nextLine();
-
-        //Imprimimos el resultado
-        System.out.println("Hola " + name + ", bienvenida al scanner de Java");
-
-        scanner.close();
-
-        //Corre tu programa y mira el resultado
+        input.close();
     }
 }
